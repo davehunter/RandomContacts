@@ -8,16 +8,26 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "CoreDataManager.h"
 
 @interface RandomContactsTests : XCTestCase
-
+@property (nonatomic,strong) NSManagedObjectContext* ctx;
 @end
 
 @implementation RandomContactsTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    NSManagedObjectModel* objectModel = [NSManagedObjectModel mergedModelFromBundles:[NSArray arrayWithObject:[NSBundle bundleForClass:[CoreDataManager class]]]];
+    
+    NSPersistentStoreCoordinator* coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:objectModel];
+    
+    XCTAssert( [coordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:NULL], @"Can't add store" );
+    
+    self.ctx = [[NSManagedObjectContext alloc] init];
+    self.ctx.persistentStoreCoordinator = coordinator;
+
 }
 
 - (void)tearDown {
@@ -25,16 +35,32 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testLoadingContactFromJSON {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
+    
+    NSString* jsonPath = [[NSBundle bundleForClass:[self class]] pathForResource:@"TestContact" ofType:@"json"];
+    
+    XCTAssert( jsonPath != nil, @"Can't find test Json path");
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+    
+    NSData* data = [NSData dataWithContentsOfFile:jsonPath];
+    
+    XCTAssert( jsonPath != nil, @"Can't load test Json data");
+    
+    NSError* theErr = nil;
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data
+                                                                         options:0
+                                                                           error:&theErr];
+    XCTAssert( theErr == nil, @"Can't parse json");
+
+
+    Contact* contact = [Contact contactFromJSON:result managedObjectContext:self.ctx];
+    
+    XCTAssert( contact != nil, @"Couldn't get contact");
+    
+    XCTAssert( [contact.firstName isEqualToString:@"barbra"], @"Not barbra!" );
+    XCTAssert( [contact.lastName isEqualToString:@"streisand"], @"Not streisand!" );
+
 }
 
 @end

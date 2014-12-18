@@ -9,11 +9,32 @@
 /* Begin PBXBuildFile section */
 		551C3A4F1A41E868009AE8CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 551C3A4E1A41E868009AE8CD /* main.m */; };
 		551C3A521A41E868009AE8CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 551C3A511A41E868009AE8CD /* AppDelegate.m */; };
-		551C3A551A41E868009AE8CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 551C3A541A41E868009AE8CD /* ViewController.m */; };
 		551C3A581A41E868009AE8CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551C3A561A41E868009AE8CD /* Main.storyboard */; };
 		551C3A5A1A41E868009AE8CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551C3A591A41E868009AE8CD /* Images.xcassets */; };
 		551C3A5D1A41E868009AE8CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551C3A5B1A41E868009AE8CD /* LaunchScreen.xib */; };
 		551C3A691A41E868009AE8CD /* RandomContactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 551C3A681A41E868009AE8CD /* RandomContactsTests.m */; };
+		55786E311A41EAD100E2EA2D /* RandomContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55786E2F1A41EAD100E2EA2D /* RandomContacts.xcdatamodeld */; };
+		55786E321A41EAD100E2EA2D /* RandomContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55786E2F1A41EAD100E2EA2D /* RandomContacts.xcdatamodeld */; };
+		55942AD41A41EF7B003C297C /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AD31A41EF7B003C297C /* Contact.m */; };
+		55942AD51A41EF7B003C297C /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AD31A41EF7B003C297C /* Contact.m */; };
+		55942AD91A4206CA003C297C /* ContactGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AD81A4206CA003C297C /* ContactGrabber.m */; };
+		55942ADA1A4206CA003C297C /* ContactGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AD81A4206CA003C297C /* ContactGrabber.m */; };
+		55942AE21A421317003C297C /* Contact+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AE11A421317003C297C /* Contact+JSON.m */; };
+		55942AE61A421E0A003C297C /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AE51A421E0A003C297C /* CoreDataManager.m */; };
+		55942AEA1A4229E8003C297C /* ContactCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AE91A4229E8003C297C /* ContactCollectionViewController.m */; };
+		55942AEF1A4232F1003C297C /* ContactCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AEE1A4232F1003C297C /* ContactCollectionViewCell.m */; };
+		55942AF21A423432003C297C /* UIImageView+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AF11A423432003C297C /* UIImageView+URL.m */; };
+		55942AF51A423CE2003C297C /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AF41A423CE2003C297C /* ContactDetailsViewController.m */; };
+		55A50A551A427C83000957E4 /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A50A541A427C83000957E4 /* ImageLoader.m */; };
+		55A50A561A42926A000957E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 551C3A511A41E868009AE8CD /* AppDelegate.m */; };
+		55A50A571A42927E000957E4 /* ContactCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AE91A4229E8003C297C /* ContactCollectionViewController.m */; };
+		55A50A581A42927E000957E4 /* ContactCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AEE1A4232F1003C297C /* ContactCollectionViewCell.m */; };
+		55A50A591A42927E000957E4 /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AF41A423CE2003C297C /* ContactDetailsViewController.m */; };
+		55A50A5A1A42927E000957E4 /* UIImageView+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AF11A423432003C297C /* UIImageView+URL.m */; };
+		55A50A5B1A42927E000957E4 /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A50A541A427C83000957E4 /* ImageLoader.m */; };
+		55A50A5C1A42927E000957E4 /* Contact+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AE11A421317003C297C /* Contact+JSON.m */; };
+		55A50A5D1A42927E000957E4 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55942AE51A421E0A003C297C /* CoreDataManager.m */; };
+		55A50A5F1A429528000957E4 /* TestContact.json in Resources */ = {isa = PBXBuildFile; fileRef = 55A50A5E1A429528000957E4 /* TestContact.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +53,32 @@
 		551C3A4E1A41E868009AE8CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		551C3A501A41E868009AE8CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		551C3A511A41E868009AE8CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		551C3A531A41E868009AE8CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		551C3A541A41E868009AE8CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		551C3A571A41E868009AE8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		551C3A591A41E868009AE8CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		551C3A591A41E868009AE8CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RandomContacts/Images.xcassets; sourceTree = "<group>"; };
 		551C3A5C1A41E868009AE8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		551C3A621A41E868009AE8CD /* RandomContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		551C3A671A41E868009AE8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551C3A681A41E868009AE8CD /* RandomContactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomContactsTests.m; sourceTree = "<group>"; };
+		55786E301A41EAD100E2EA2D /* RandomContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomContacts.xcdatamodel; sourceTree = "<group>"; };
+		55942AD21A41EF7B003C297C /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = RandomContacts/Contact.h; sourceTree = "<group>"; };
+		55942AD31A41EF7B003C297C /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = RandomContacts/Contact.m; sourceTree = "<group>"; };
+		55942AD71A4206CA003C297C /* ContactGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactGrabber.h; sourceTree = "<group>"; };
+		55942AD81A4206CA003C297C /* ContactGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactGrabber.m; sourceTree = "<group>"; };
+		55942AE01A421317003C297C /* Contact+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contact+JSON.h"; sourceTree = "<group>"; };
+		55942AE11A421317003C297C /* Contact+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contact+JSON.m"; sourceTree = "<group>"; };
+		55942AE41A421E0A003C297C /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		55942AE51A421E0A003C297C /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		55942AE81A4229E8003C297C /* ContactCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCollectionViewController.h; sourceTree = "<group>"; };
+		55942AE91A4229E8003C297C /* ContactCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCollectionViewController.m; sourceTree = "<group>"; };
+		55942AED1A4232F1003C297C /* ContactCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCollectionViewCell.h; sourceTree = "<group>"; };
+		55942AEE1A4232F1003C297C /* ContactCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCollectionViewCell.m; sourceTree = "<group>"; };
+		55942AF01A423432003C297C /* UIImageView+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+URL.h"; path = "../UIImageView+URL.h"; sourceTree = "<group>"; };
+		55942AF11A423432003C297C /* UIImageView+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+URL.m"; path = "../UIImageView+URL.m"; sourceTree = "<group>"; };
+		55942AF31A423CE2003C297C /* ContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailsViewController.h; sourceTree = "<group>"; };
+		55942AF41A423CE2003C297C /* ContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
+		55A50A531A427C83000957E4 /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageLoader.h; path = ../ImageLoader.h; sourceTree = "<group>"; };
+		55A50A541A427C83000957E4 /* ImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageLoader.m; path = ../ImageLoader.m; sourceTree = "<group>"; };
+		55A50A5E1A429528000957E4 /* TestContact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestContact.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +102,9 @@
 		551C3A401A41E868009AE8CD = {
 			isa = PBXGroup;
 			children = (
+				55786E2F1A41EAD100E2EA2D /* RandomContacts.xcdatamodeld */,
+				551C3A561A41E868009AE8CD /* Main.storyboard */,
+				551C3A591A41E868009AE8CD /* Images.xcassets */,
 				551C3A4B1A41E868009AE8CD /* RandomContacts */,
 				551C3A651A41E868009AE8CD /* RandomContactsTests */,
 				551C3A4A1A41E868009AE8CD /* Products */,
@@ -83,11 +125,23 @@
 			children = (
 				551C3A501A41E868009AE8CD /* AppDelegate.h */,
 				551C3A511A41E868009AE8CD /* AppDelegate.m */,
-				551C3A531A41E868009AE8CD /* ViewController.h */,
-				551C3A541A41E868009AE8CD /* ViewController.m */,
-				551C3A561A41E868009AE8CD /* Main.storyboard */,
-				551C3A591A41E868009AE8CD /* Images.xcassets */,
-				551C3A5B1A41E868009AE8CD /* LaunchScreen.xib */,
+				55942AE81A4229E8003C297C /* ContactCollectionViewController.h */,
+				55942AE91A4229E8003C297C /* ContactCollectionViewController.m */,
+				55942AED1A4232F1003C297C /* ContactCollectionViewCell.h */,
+				55942AEE1A4232F1003C297C /* ContactCollectionViewCell.m */,
+				55942AF31A423CE2003C297C /* ContactDetailsViewController.h */,
+				55942AF41A423CE2003C297C /* ContactDetailsViewController.m */,
+				55942AD71A4206CA003C297C /* ContactGrabber.h */,
+				55942AD81A4206CA003C297C /* ContactGrabber.m */,
+				55942AF01A423432003C297C /* UIImageView+URL.h */,
+				55942AF11A423432003C297C /* UIImageView+URL.m */,
+				55A50A531A427C83000957E4 /* ImageLoader.h */,
+				55A50A541A427C83000957E4 /* ImageLoader.m */,
+				55942AE01A421317003C297C /* Contact+JSON.h */,
+				55942AE11A421317003C297C /* Contact+JSON.m */,
+				55942AE41A421E0A003C297C /* CoreDataManager.h */,
+				55942AE51A421E0A003C297C /* CoreDataManager.m */,
+				55942AD61A41EF89003C297C /* Generated */,
 				551C3A4C1A41E868009AE8CD /* Supporting Files */,
 			);
 			path = RandomContacts;
@@ -96,6 +150,7 @@
 		551C3A4C1A41E868009AE8CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				551C3A5B1A41E868009AE8CD /* LaunchScreen.xib */,
 				551C3A4D1A41E868009AE8CD /* Info.plist */,
 				551C3A4E1A41E868009AE8CD /* main.m */,
 			);
@@ -106,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				551C3A681A41E868009AE8CD /* RandomContactsTests.m */,
+				55A50A5E1A429528000957E4 /* TestContact.json */,
 				551C3A661A41E868009AE8CD /* Supporting Files */,
 			);
 			path = RandomContactsTests;
@@ -117,6 +173,16 @@
 				551C3A671A41E868009AE8CD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55942AD61A41EF89003C297C /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				55942AD21A41EF7B003C297C /* Contact.h */,
+				55942AD31A41EF7B003C297C /* Contact.m */,
+			);
+			name = Generated;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A50A5F1A429528000957E4 /* TestContact.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551C3A551A41E868009AE8CD /* ViewController.m in Sources */,
+				55A50A551A427C83000957E4 /* ImageLoader.m in Sources */,
+				55942AF51A423CE2003C297C /* ContactDetailsViewController.m in Sources */,
+				55942AE21A421317003C297C /* Contact+JSON.m in Sources */,
+				55942AE61A421E0A003C297C /* CoreDataManager.m in Sources */,
 				551C3A521A41E868009AE8CD /* AppDelegate.m in Sources */,
+				55942AEA1A4229E8003C297C /* ContactCollectionViewController.m in Sources */,
+				55942AD91A4206CA003C297C /* ContactGrabber.m in Sources */,
+				55942AEF1A4232F1003C297C /* ContactCollectionViewCell.m in Sources */,
+				55942AD41A41EF7B003C297C /* Contact.m in Sources */,
+				55786E311A41EAD100E2EA2D /* RandomContacts.xcdatamodeld in Sources */,
+				55942AF21A423432003C297C /* UIImageView+URL.m in Sources */,
 				551C3A4F1A41E868009AE8CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +305,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A50A581A42927E000957E4 /* ContactCollectionViewCell.m in Sources */,
+				55A50A5A1A42927E000957E4 /* UIImageView+URL.m in Sources */,
+				55942ADA1A4206CA003C297C /* ContactGrabber.m in Sources */,
+				55A50A591A42927E000957E4 /* ContactDetailsViewController.m in Sources */,
+				55786E321A41EAD100E2EA2D /* RandomContacts.xcdatamodeld in Sources */,
+				55942AD51A41EF7B003C297C /* Contact.m in Sources */,
+				55A50A5D1A42927E000957E4 /* CoreDataManager.m in Sources */,
+				55A50A5B1A42927E000957E4 /* ImageLoader.m in Sources */,
 				551C3A691A41E868009AE8CD /* RandomContactsTests.m in Sources */,
+				55A50A561A42926A000957E4 /* AppDelegate.m in Sources */,
+				55A50A5C1A42927E000957E4 /* Contact+JSON.m in Sources */,
+				55A50A571A42927E000957E4 /* ContactCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +337,7 @@
 				551C3A571A41E868009AE8CD /* Base */,
 			);
 			name = Main.storyboard;
+			path = RandomContacts;
 			sourceTree = "<group>";
 		};
 		551C3A5B1A41E868009AE8CD /* LaunchScreen.xib */ = {
@@ -412,6 +500,7 @@
 				551C3A6E1A41E868009AE8CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		551C3A6F1A41E868009AE8CD /* Build configuration list for PBXNativeTarget "RandomContactsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,8 +509,22 @@
 				551C3A711A41E868009AE8CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55786E2F1A41EAD100E2EA2D /* RandomContacts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55786E301A41EAD100E2EA2D /* RandomContacts.xcdatamodel */,
+			);
+			currentVersion = 55786E301A41EAD100E2EA2D /* RandomContacts.xcdatamodel */;
+			path = RandomContacts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 551C3A411A41E868009AE8CD /* Project object */;
 }

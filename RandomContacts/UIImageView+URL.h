@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImageView+URL.h
 //  RandomContacts
 //
 //  Created by Dave Hunter on 2014-12-17.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIImageView(URL)
 
+@property (nonatomic, strong) NSURL* imageURL;
 
 @end
-
